@@ -38,7 +38,7 @@ if not all([app_token, bot_token, target_channel_id, channel_ids]):
 # Initializes your app with your bot token and socket mode handler
 app = App(token=bot_token)
 def load_filter_patterns():
-    patterns_file = "/appz/scripts/patterns.json"
+    patterns_file = "/appz/scripts/webapps/patterns.json"
     try:
         with open(patterns_file, 'r') as file:
             data = json.load(file)
